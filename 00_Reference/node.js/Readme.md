@@ -1,3 +1,9 @@
 ## node.js checklist
 
-- [ ] 1.  자바스크립트 scope를 var키워드르를 기준으로 설명할수 있다.
+- [ ] 1. Client와 Server의 개념에 대해서 설명하라!
+- [ ] 2. 
+
+
+Reference List
+1) https://isme2n.github.io/devlog/2017/06/27/node-js/
+2) 
