@@ -4,8 +4,8 @@
 Google v8 engine를 이용해 만들어진 javascript 기반 서버 사이드 개발 플랫폼 <br>
 javascript를 통해 **Web Browser 제어** 도 가능하고, **서버 기반의 웹 어플리케이션**도 제작이 가능하다. <br>
 
-node.js의 내부 구조
-![Image](https://github.com/ridickle7/yapp_11th_node.js_study/blob/7_LeeSangWoo/00_Reference/node.js/checkList2/node.js_architecture.png)
+node.js의 내부 구조<br>
+![Image](https://github.com/ridickle7/yapp_11th_node.js_study/blob/7_LeeSangWoo/00_Reference/node.js/checklist2/node.js_architecture.png)
 
 
 ### 1. Single Thread
@@ -40,11 +40,11 @@ console.log("the third CPU Bound working");
 
 Q. 만약 Blocking 작업이었다면?<br>
 A. first -> 3초 뒤 second -> third
-![Image](https://github.com/ridickle7/yapp_11th_node.js_study/blob/7_LeeSangWoo/00_Reference/node.js/checkList2/blocking_IO.png)
+![Image](https://github.com/ridickle7/yapp_11th_node.js_study/blob/7_LeeSangWoo/00_Reference/node.js/checklist2/blocking_IO.jpg)
 
 Q. 만약 Non-Blocking 작업이었다면?<br>
 A. first -> third -> (first로 부터) 3초 뒤 second
-![Image](https://github.com/ridickle7/yapp_11th_node.js_study/blob/7_LeeSangWoo/00_Reference/node.js/checkList2/nonBlocking_IO.png)
+![Image](https://github.com/ridickle7/yapp_11th_node.js_study/blob/7_LeeSangWoo/00_Reference/node.js/checklist2/nonBlocking_IO.jpg)
 
 
 ### 3. event-Driven
@@ -57,7 +57,7 @@ I/O 작업의 예
 - https://goo.gl/c1LpfV
 - 정리하면 javascript의 코어 모듈과, C/C++ 영역을 거쳐 다시 javascript 영역으로 돌아온다.
 
-![Image](https://github.com/ridickle7/yapp_11th_node.js_study/blob/7_LeeSangWoo/00_Reference/node.js/checkList2/cost_of_IO.png)
+![Image](https://github.com/ridickle7/yapp_11th_node.js_study/blob/7_LeeSangWoo/00_Reference/node.js/checklist2/cost_of_IO.png)
 
 
 
