@@ -36,10 +36,10 @@ console.log("the third CPU Bound working");
 편의상 로그 문장을 서수로 표현하겠다.
 
 Q. 만약 Blocking 작업이었다면?<br>
-A. first -> 2초뒤 second -> third
+A. first -> 3초 뒤 second -> third
 
 Q. 만약 Non-Blocking 작업이었다면?<br>
-A. first -> third -> (first로 부터) 2초 뒤 second
+A. first -> third -> (first로 부터) 3초 뒤 second
 
 
 
