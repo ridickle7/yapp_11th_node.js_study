@@ -1,7 +1,7 @@
 ## node.js checklist
 
 - [ ] 1. Client와 Server의 개념에 대해서 설명하라!
-- [ ] 2. 
+- [ ] 2. node.js의 특징
 
 
 Reference List
