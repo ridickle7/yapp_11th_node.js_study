@@ -77,10 +77,10 @@ I/O 작업의 예
 > 런타임 : 컴퓨터 프로그램이 실행되고 있는 동안의 동작
 
 
-> 참고자료
-> Node.js의 내부 아키텍쳐 이해 : http://sjh836.tistory.com/79
+> 참고자료 <br>
+> Node.js의 내부 아키텍쳐 이해 : http://sjh836.tistory.com/79 <br>
 > Node.js의 이벤트 루프 이해 : http://la-stranger.blogspot.kr/2014/02/nodejs-nodejs.html <br>
 > Node.js의 이벤트 처리 과정(자세히) : https://goo.gl/YJX9pM <br>
 > Blocking과 NonBlocking의 이해 : http://ozt88.tistory.com/20 <br>
-> Node.js의 비동기적 특성과 #1, #2 내용 : https://qkraudghgh.github.io/node/2016/10/23/node-async.html
+> Node.js의 비동기적 특성과 #1, #2 내용 : https://qkraudghgh.github.io/node/2016/10/23/node-async.html <br>
 > Javascript 엔진에 대한 이해 : http://jinbroing.tistory.com/98
