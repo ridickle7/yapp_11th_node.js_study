@@ -26,12 +26,11 @@ URI(또는 경로) 및 특정한 HTTP 요청 메소드(GET, POST 등)인
 
 ![Image](https://github.com/ridickle7/yapp_11th_node.js_study/blob/7_LeeSangWoo/00_Reference/node.js/checklist4/routing.png)
 
-app.**METHOD**(**PATH**, **HANDLER (= CALLBACK)**);
+<br><br>
 
 
-> 라우터
+> 라우터<br><br>
 > ![Image](https://github.com/ridickle7/yapp_11th_node.js_study/blob/7_LeeSangWoo/00_Reference/node.js/checklist4/router.png)
-
 > express.Router 클래스를 사용하면 모듈식 마운팅 가능한 핸들러를 작성할 수 있습니다.
 > 각 모듈별 처리가 가능 (mini app이라고 비유할 수 있다.)
 
