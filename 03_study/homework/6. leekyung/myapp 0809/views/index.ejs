@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title><%= title %></title>
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+  </head>
+  <body>
+    <h1><%= title %></h1>
+    <p>Welcome to <%= title %></p>
+    <form method='GET' action="/lotto">
+      <input type="submit" value="LOTTO"/>
+    </form>
+    <form method='GET' action="/write">
+      <input type="submit" value="Write New Post"/>
+    </form>
+    <form method='GET' action="/list">
+      <input type="submit" value="List of Posts"/>
+    </form>
+  </body>
+</html>

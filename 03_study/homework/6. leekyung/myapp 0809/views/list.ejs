@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title><%= title %></title>
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+  </head>
+  <body>
+    <h1><%= title %></h1>
+
+    <form method='GET' action="/write">
+      <input type="submit" value="Write New Post"/>
+    </form>
+    <form method='GET' action="/">
+      <input type="submit" value="Home"/>
+    </form>
+
+      <table>
+        <tr>
+          <td>제목</td>
+          <td>작성자</td>
+        </tr>
+<%
+  for(var i=0; i<rows.length; i++)
+  {
+    var oneItem = rows[i];
+%>
+        <tr>
+          <td><a href='/view/<%=oneItem.id%>' ><%=oneItem.title%></a></td>
+          <td><%=oneItem.author%></td>
+        </tr>
+<%
+  }
+%>
+      </table>
+  </body>
+</html>

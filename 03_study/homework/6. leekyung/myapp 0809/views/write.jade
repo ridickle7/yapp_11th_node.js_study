@@ -1,0 +1,13 @@
+html
+  head
+    title Write New Post
+
+  body
+    h1 Write a Post
+    form(action='/write_receiver' method='post')
+      p
+        input(type='text' name='title')
+      p
+        textarea(name='contents')
+      p
+        input(type='submit')
