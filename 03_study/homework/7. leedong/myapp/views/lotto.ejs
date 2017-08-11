@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=euc-kr">
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+  <!--<script src="js/jquery.min.js"></script>-->
+</head>
+<body>
+<div style="text-align: center;">
+<h1><%=title%></h1>
+<input type="text" size="30" id="num"><br><br>
+<button type="button" id="rand_btn">로또 번호 생성</button>
+<button type="button" id="avg_btn">평균 집계</button>
+<button type="button" onclick="location.href='/'">go to homepage</button>
+<div style="margin-top:30px;">
+<div id="time"></div>
+<div id="avg"></div>
+</div>
+</div>
+</body>
+<script>
+  function getLotto(){
+    var arr = new Array();
+    var dflag = true;
+    var count = 0;
+ 
+    while(count < 6){
+      //1부터 45까지의 랜덤 숫자
+      var rand = parseInt((Math.random()*45)+1);
+
+      if(arr.indexOf(rand) != -1) dflag = false;
+
+      if(dflag){
+        arr.push(rand);
+        count++;
+      }
+      dflag = true;
+    }
+    return arr;
+  }
+ 
+  function insert(arr,num){
+    for(var i = 0 ; i<arr.length; i++){
+      num[arr[i]-1] += 1;
+    }
+    return num;
+  }
+
+  function avgLotto(avg){
+    var st = "";
+    for(var i = 0 ; i < avg.length; i++){
+      st += "["+(i+1)+"] "+avg[i]+"개 &nbsp;&nbsp;&nbsp;";
+      if((i+1)%5 == 0){
+        st += "<br>";
+      }
+    }
+    return st;
+  }
+
+  $(function(){
+    var i = 1;
+    var num = new Array(45);
+    var avg;
+    for(var a = 0 ; a<num.length; a++){
+      num[a] = 0;
+    }
+
+    $("#rand_btn").click(function(){
+        var n = getLotto();
+        avg = insert(n,num);
+        $("#num").val(n.join(" "));
+        $("#time").append("<p>"+i+" 회차 번호 : "+n.join("  ")+"</p>");
+        i++;
+    });
+    $("#avg_btn").click(function(){
+    	if($("#num").val()==""){
+    		alert('none');
+    	}
+      $("#avg").append(avgLotto(avg));
+      $("#rand_btn").attr("disabled",true);
+      $(this).attr("disabled",true);
+    });
+  })
+</script>
+</html>
