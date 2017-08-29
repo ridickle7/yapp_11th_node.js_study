@@ -30,6 +30,9 @@ var makingLotto = function(){
     var numList = [];
     isEqual(numList);
 
+    var str = 'asdfg';
+    str.length
+
     return numList.sort(ascendingSort());
 }
 
