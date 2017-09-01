@@ -175,22 +175,22 @@ Func2();
 
 실행 문맥의 생성 순서는 다음과 같다.
 
-1. 활성화 객체 생성 <br>
+#### 1. 활성화 객체 생성 <br>
 ![Image](https://github.com/ridickle7/yapp_11th_node.js_study/blob/7_LeeSangWoo/00_Reference/javascript/1.%20scope%20introduction%20from%20var/EC_making1.png)
 
-2. arguments객체 생성 <br>
+#### 2. arguments객체 생성 <br>
 ![Image](https://github.com/ridickle7/yapp_11th_node.js_study/blob/7_LeeSangWoo/00_Reference/javascript/1.%20scope%20introduction%20from%20var/EC_making2.png)
 
-3. 유효범위 정보 생성 <br>
+#### 3. 유효범위 정보 생성 <br>
 ![Image](https://github.com/ridickle7/yapp_11th_node.js_study/blob/7_LeeSangWoo/00_Reference/javascript/1.%20scope%20introduction%20from%20var/EC_making3.png)
 
-4. 변수 생성 <br>
+#### 4. 변수 생성 <br>
 ![Image](https://github.com/ridickle7/yapp_11th_node.js_study/blob/7_LeeSangWoo/00_Reference/javascript/1.%20scope%20introduction%20from%20var/EC_making4.png)
 
-5. this객체 바인딩 <br>
+#### 5. this객체 바인딩 <br>
 ![Image](https://github.com/ridickle7/yapp_11th_node.js_study/blob/7_LeeSangWoo/00_Reference/javascript/1.%20scope%20introduction%20from%20var/EC_making5.png)
 
-6. 함수 실행 <br>
+#### 6. 함수 실행 <br>
 ![Image](https://github.com/ridickle7/yapp_11th_node.js_study/blob/7_LeeSangWoo/00_Reference/javascript/1.%20scope%20introduction%20from%20var/EC_making6.png)
 
 
