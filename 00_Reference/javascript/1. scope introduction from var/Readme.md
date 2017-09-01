@@ -254,3 +254,12 @@ case 1 : 클로저를 활용한다면
 
 Q. 그러면 어떻게해야 되나요? <br>
 A. 정답은 프로토타입
+
+
+참고 URL
+1. JavaScript : Scope 이해
+http://www.nextree.co.kr/p7363/ 
+2. Javascript의 함수와 스코프 체인(Scope Chain)
+http://blog.naver.com/PostView.nhn?blogId=jjoommnn&logNo=130149113595 
+3. MDN web docs : 클로저
+https://developer.mozilla.org/ko/docs/Web/JavaScript/Guide/Closures
