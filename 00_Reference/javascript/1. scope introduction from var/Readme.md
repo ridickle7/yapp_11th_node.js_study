@@ -8,7 +8,7 @@ scope의 종류
 2. 지역 유효범위 (Local scope)
 
 그림으로 이해하면 다음과 같다. <br>
-![Image](https://github.com/ridickle7/effectiveJava/blob/master/src/Object_1/_05_uselessObject/primitive%2C%20wrapper%20class.png)
+![Image](https://github.com/ridickle7/yapp_11th_node.js_study/blob/7_LeeSangWoo/00_Reference/javascript/1.%20scope%20introduction%20from%20var/global%20:%20local%20scope.png)
 
 
 ### 1) javascript는 타 언어에 비한 고유한 유효범위 특징이 있다.
@@ -165,7 +165,7 @@ Func2();
 </pre></code>
 
 위의 코드에서 "Func2()" 가 실행되면, 다음의 flow 를 가진다. <br>
-![Image](https://github.com/ridickle7/effectiveJava/blob/master/src/Object_1/_05_uselessObject/primitive%2C%20wrapper%20class.png)
+![Image](https://github.com/ridickle7/yapp_11th_node.js_study/blob/7_LeeSangWoo/00_Reference/javascript/1.%20scope%20introduction%20from%20var/executeContext_flow.png)
 
 실행 문맥은 3가지로 구성되어 있다.
 - 활성화 객체 	: (파라미터와 내부 변수)
@@ -175,22 +175,22 @@ Func2();
 실행 문맥의 생성 순서는 다음과 같다.
 
 1. 활성화 객체 생성 <br>
-![Image](https://github.com/ridickle7/effectiveJava/blob/master/src/Object_1/_05_uselessObject/primitive%2C%20wrapper%20class.png)
+![Image](https://github.com/ridickle7/yapp_11th_node.js_study/blob/7_LeeSangWoo/00_Reference/javascript/1.%20scope%20introduction%20from%20var/EC_making1.png)
 
 2. arguments객체 생성 <br>
-![Image](https://github.com/ridickle7/effectiveJava/blob/master/src/Object_1/_05_uselessObject/primitive%2C%20wrapper%20class.png)
+![Image](https://github.com/ridickle7/yapp_11th_node.js_study/blob/7_LeeSangWoo/00_Reference/javascript/1.%20scope%20introduction%20from%20var/EC_making2.png)
 
 3. 유효범위 정보 생성 <br>
-![Image](https://github.com/ridickle7/effectiveJava/blob/master/src/Object_1/_05_uselessObject/primitive%2C%20wrapper%20class.png)
+![Image](https://github.com/ridickle7/yapp_11th_node.js_study/blob/7_LeeSangWoo/00_Reference/javascript/1.%20scope%20introduction%20from%20var/EC_making3.png)
 
 4. 변수 생성 <br>
-![Image](https://github.com/ridickle7/effectiveJava/blob/master/src/Object_1/_05_uselessObject/primitive%2C%20wrapper%20class.png)
+![Image](https://github.com/ridickle7/yapp_11th_node.js_study/blob/7_LeeSangWoo/00_Reference/javascript/1.%20scope%20introduction%20from%20var/EC_making4.png)
 
 5. this객체 바인딩 <br>
-![Image](https://github.com/ridickle7/effectiveJava/blob/master/src/Object_1/_05_uselessObject/primitive%2C%20wrapper%20class.png)
+![Image](https://github.com/ridickle7/yapp_11th_node.js_study/blob/7_LeeSangWoo/00_Reference/javascript/1.%20scope%20introduction%20from%20var/EC_making5.png)
 
 6. 함수 실행 <br>
-![Image](https://github.com/ridickle7/effectiveJava/blob/master/src/Object_1/_05_uselessObject/primitive%2C%20wrapper%20class.png)
+![Image](https://github.com/ridickle7/yapp_11th_node.js_study/blob/7_LeeSangWoo/00_Reference/javascript/1.%20scope%20introduction%20from%20var/EC_making6.png)
 
 
 ### 3) 스코프 체인 (Scope Chain)
@@ -200,7 +200,7 @@ Func2();
 (가장 먼저 발견하는 상위 함수 영역부터 저장)
 
 그림으로 표현하면 다음과 같다. <br>
-![Image](https://github.com/ridickle7/effectiveJava/blob/master/src/Object_1/_05_uselessObject/primitive%2C%20wrapper%20class.png)
+![Image](https://github.com/ridickle7/yapp_11th_node.js_study/blob/7_LeeSangWoo/00_Reference/javascript/1.%20scope%20introduction%20from%20var/EC_innerMaking.png)
 
 ### 4) 클로져 (Closure)
 - javascript의 스코프 체인을 이용하여 이미 생명 주기가 끝난 외부 함수의 변수를 참조하는 방법
