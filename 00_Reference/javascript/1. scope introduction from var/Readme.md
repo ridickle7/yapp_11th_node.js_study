@@ -258,9 +258,9 @@ A. 정답은 프로토타입
 
 
 참고 URL
-1. JavaScript : Scope 이해
-http://www.nextree.co.kr/p7363/ 
-2. Javascript의 함수와 스코프 체인(Scope Chain)
-http://blog.naver.com/PostView.nhn?blogId=jjoommnn&logNo=130149113595 
-3. MDN web docs : 클로저
+1. JavaScript : Scope 이해<br>
+http://www.nextree.co.kr/p7363/ <br>
+2. Javascript의 함수와 스코프 체인(Scope Chain)<br>
+http://blog.naver.com/PostView.nhn?blogId=jjoommnn&logNo=130149113595 <br>
+3. MDN web docs : 클로저<br>
 https://developer.mozilla.org/ko/docs/Web/JavaScript/Guide/Closures
