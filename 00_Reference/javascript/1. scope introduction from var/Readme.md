@@ -16,6 +16,7 @@ scope의 종류
 2. 변수명 중복 허용
 3. var 키워드 생략
 4. 렉시컬 특성
+5. 호이스팅 (Hoisting)
 
 
 #### 1. 함수 단위의 유효 범위
@@ -149,7 +150,7 @@ var hoistingFunction3 = new Function(
 - 실행 정보를 의미함  (한줄 한줄의 명령어!) <br>
 - javascript 내 Call Stack에서 실행 문맥들을 관리 <br>
 
-<pre><code> // 6. 실행 문맥 (Execution context)
+<pre><code> // 실행 문맥 (Execution context)
 console.log("전역 컨텍스트 입니다");  
 
 function Func1(){  
@@ -164,7 +165,7 @@ function Func2(){
 Func2();  
 </pre></code>
 
-위의 코드에서 "Func2()" 가 실행되면, 다음의 flow 를 가진다. <br>
+위의 코드는 다음의 flow 를 가진다. <br>
 ![Image](https://github.com/ridickle7/yapp_11th_node.js_study/blob/7_LeeSangWoo/00_Reference/javascript/1.%20scope%20introduction%20from%20var/executeContext_flow.png)
 
 실행 문맥은 3가지로 구성되어 있다.
