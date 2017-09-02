@@ -6,9 +6,9 @@ javascript에서 prototype은 **객체의 원형** 을 이야기한다.
 객체의 원형을 통해서 또 다른 객체를 만들고 이 과정을 반복하여 객체를 확장시켜 나가는 방식을
 **프로토타입 기반 프로그래밍** 이라 한다.
 
-prototype의 구성
+### 1. prototype의 구성
 
-1. Protytype Object <br>
+#### 1) Protytype Object <br>
 자기 자신의 분신<br>
 다른 객체가 참조할 수 있는 프로토타입 객체<br>
 
@@ -49,7 +49,7 @@ prototype의 구성
 
 > 2. 함수형 타입이 가지게 되는 특징이 있다. <br>
 > > 1. 생성자(Constructor) 자격이 부여된다. <br>
-> > 이 특징 때문에 new를 통해 객체를 만들 수 있다.
+> > 이 특징 때문에 new를 통해 객체를 만들 수 있다. <br>
 > > 2. 정의와 동시에 prototype 데이터가 내장된다. <br>
 > > 위의 말은 함수형 타입 생성과 동시에 prototype이 생긴다는 말과 같은 말이다.<br>
 > > 개발자 도구를 통해서 위의 말을 이해할 수 있다. (참고로 일반 콘솔에서는 확인이 힘들다) <br>
@@ -60,6 +60,9 @@ prototype의 구성
 > ![Image](https://github.com/ridickle7/yapp_11th_node.js_study/blob/7_LeeSangWoo/00_Reference/javascript/2.%20prototype/whenFunctionDefined.png)
 
 Prototype Object에 Prototype Property를 통해 인수 및 함수를 자유롭게 넣어줄 수 있다.
+> Prototype Property
+> 
+> 
 <pre><code>function Person() { };
 Person.prototype.eyes = 4;              // Prototype Property
 Person.prototype.nose = 5;              // Prototype Property
@@ -145,14 +148,17 @@ c.attr1 // 'a'
 이 과정을 보고 감이 온 분들도 있겠지만 **_proto_는 상위의 것을 찾아가는 흐름** 이다.<br>
 그러면 프로토타입의 _proto_는 뭘 의미하는 것일까? 여기서 Prototype Link를 이야기할 수 있다.
 
-2. Prototype Link<br>
-javascript의 모든 객체는 객체 원형에 대한 숨겨진 연결을 갖는다. <br>
-Prototype Link는 자기 자신을 만들어낸 객체의 원형(상위 객체)을 가리킨다.<br>
-prototype으로 변수를 선언한 코드의 경우 _proto_ 값은 Object이다. <br>
-인스턴스는 각자 자신을 생성한 클래스(를 가장한 함수)를 _proto_로 가지고 있다. <br>
-헷갈리지 말아야 될 것이 인스턴스는 prototype이 없다!! 반드시 주의할 것!
+#### 2) Prototype Link<br>
+상위에서 물려받은 객체의 프로토타입에 대한 정보를 가리킨다. <br>
 
-여기서 나올 수 있는 이야기가 Prototype Chain 이다. 예제를 보자.
+Prototype Link의 특징
+- prototype으로 변수를 선언한 코드의 경우 _proto_ 값은 Object이다. <br>
+- 인스턴스는 각자 자신을 생성한 클래스(를 가장한 함수)를 _proto_로 가지고 있다. <br>
+- 인스턴스는 prototype이 없다!!
+
+### 2. Prototype Chain
+프로토타입과의 연결고리가 이어져 상속관계를 통하여 상위 프로토타입으로 연속해서 이어지는 관계를 **프로토타입 체인** 이라고 한다. 
+이 연결은 _proto_ 를 따라 올라가게 된다.
 
 <pre><code>var A = function () { };
 A.prototype.x = function () {
@@ -177,7 +183,7 @@ B.x();
 C.x();
 </code></pre>
 
-먼저 B와 C는 A 클래스를 그대로 긁어온다. 이로 인해 프로토타입 정보 역시 B와 C에 그대로 반영될 것이다. 위의 체인을 도식상으로 표현하면 다음 그림과 같다. <br>
+먼저 B와 C는 A 클래스를 그대로 긁어온다. 이로 인해 프로토타입 정보 역시 B와 C에 그대로 반영될 것이다. <br>위의 체인을 도식상으로 표현하면 다음 그림과 같다. <br>
 ![Image](https://github.com/ridickle7/yapp_11th_node.js_study/blob/7_LeeSangWoo/00_Reference/javascript/2.%20prototype/prototypeChain.png)
 
 
