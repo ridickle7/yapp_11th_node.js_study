@@ -1,7 +1,7 @@
 ## javascript checklist
 
 - [ ] 1.  javascript scope      (var 기준으로 설명 / closure 개념 / closure example)
-- [ ] 2.  javascript prototype  
+- [ ] 2.  javascript prototype  (prototype 구성요소 / 객체 생성 방법 2가지와 차이점 / prototype chain)
 - [ ] 3.  const는 언제 사용해야 하는지?
 - [ ] 4.  mvc방식으로 개발한 사례가 있다면 본인이 느끼는 장단점을 설명하기.
 - [ ] 5.  크롬개발자도구에서 js디버깅을 하는 방식을 설명해보기.
