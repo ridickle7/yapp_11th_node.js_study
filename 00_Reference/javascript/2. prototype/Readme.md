@@ -40,8 +40,8 @@ prototype의 구성
 > console.log(Function);
 > </code></pre><br>
 > A. 1번과 2번의 답은 아래에 있습니다. <br>
-> ![Image](https://github.com/ridickle7/effectiveJava/blob/master/src/Object_1/_05_uselessObject/primitive%2C%20wrapper%20class.png)
-> 
+> ![Image](https://github.com/ridickle7/yapp_11th_node.js_study/blob/7_LeeSangWoo/00_Reference/javascript/2.%20prototype/object_equal.png)
+> ![Image](https://github.com/ridickle7/yapp_11th_node.js_study/blob/7_LeeSangWoo/00_Reference/javascript/2.%20prototype/function_equal.png)
 
 원하는 답도 얻어냈고, Object, Function도 원론적으로 **함수형 타입** 이라는 것도 알아냈다.<br>
 (참고로 Array 등도 모두 **함수형 타입** 이다.) <br>
@@ -53,11 +53,11 @@ prototype의 구성
 > > 2. 정의와 동시에 prototype 데이터가 내장된다. <br>
 > > 위의 말은 함수형 타입 생성과 동시에 prototype이 생긴다는 말과 같은 말이다.<br>
 > > 개발자 도구를 통해서 위의 말을 이해할 수 있다. (참고로 일반 콘솔에서는 확인이 힘들다) <br>
-> > ![Image](https://github.com/ridickle7/effectiveJava/blob/master/src/Object_1/_05_uselessObject/primitive%2C%20wrapper%20class.png)
+> > ![Image](https://github.com/ridickle7/yapp_11th_node.js_study/blob/7_LeeSangWoo/00_Reference/javascript/2.%20prototype/functionHasPrototypeObject.png)
 
 여기서 이야기나온 prototype 데이터가 바로 Prototype Object 이다!
 > Prototype Object는 클래스(를 가장한 함수)와 다음과 같은 관계를 갖는다.<br>
-> ![Image](https://github.com/ridickle7/effectiveJava/blob/master/src/Object_1/_05_uselessObject/primitive%2C%20wrapper%20class.png)
+> ![Image](https://github.com/ridickle7/yapp_11th_node.js_study/blob/7_LeeSangWoo/00_Reference/javascript/2.%20prototype/whenFunctionDefined.png)
 
 Prototype Object에 Prototype Property를 통해 인수 및 함수를 자유롭게 넣어줄 수 있다.
 <pre><code>function Person() { };
@@ -69,7 +69,7 @@ Person.prototype.getTotal = function(){ // Prototype Property
 </code></pre>
 
 해당 코드를 실행하면 Person은 다음과 같은 형태로 저장된다.<br>
-![Image](https://github.com/ridickle7/effectiveJava/blob/master/src/Object_1/_05_uselessObject/primitive%2C%20wrapper%20class.png)
+![Image](https://github.com/ridickle7/yapp_11th_node.js_study/blob/7_LeeSangWoo/00_Reference/javascript/2.%20prototype/prototypeParameter.png)
 
 
 위의 코드를 통해 앞으로 People (가짜) 클래스에서 만들어지는 객체(인스턴스)는<br>
