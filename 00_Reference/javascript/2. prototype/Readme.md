@@ -1,4 +1,4 @@
-## 1.  자바스크립트 prototype
+## 2.  자바스크립트 prototype
 
 prototype은 말 그대로 시제품을 만들기 전의 원형 <br>
 javascript에서 prototype은 **객체의 원형** 을 이야기한다.
@@ -146,7 +146,8 @@ c.attr1 // 'a'
 그러면 프로토타입의 _proto_는 뭘 의미하는 것일까? 여기서 Prototype Link를 이야기할 수 있다.
 
 2. Prototype Link<br>
-자기 자신을 만들어낸 객체의 원형(상위 객체)을 가리킨다.
+javascript의 모든 객체는 객체 원형에 대한 숨겨진 연결을 갖는다. <br>
+Prototype Link는 자기 자신을 만들어낸 객체의 원형(상위 객체)을 가리킨다.<br>
 prototype으로 변수를 선언한 코드의 경우 _proto_ 값은 Object이다. <br>
 인스턴스는 각자 자신을 생성한 클래스(를 가장한 함수)를 _proto_로 가지고 있다. <br>
 헷갈리지 말아야 될 것이 인스턴스는 prototype이 없다!! 반드시 주의할 것!
@@ -177,7 +178,7 @@ C.x();
 </code></pre>
 
 먼저 B와 C는 A 클래스를 그대로 긁어온다. 이로 인해 프로토타입 정보 역시 B와 C에 그대로 반영될 것이다. 위의 체인을 도식상으로 표현하면 다음 그림과 같다. <br>
-![Image](https://github.com/ridickle7/effectiveJava/blob/master/src/Object_1/_05_uselessObject/primitive%2C%20wrapper%20class.png)
+![Image](https://github.com/ridickle7/yapp_11th_node.js_study/blob/7_LeeSangWoo/00_Reference/javascript/2.%20prototype/prototypeChain.png)
 
 
 javascript 자체가 객체지향의 성격을 많이 가져오려 노력했기에 OOP의 성격을 마음 먹고 찾으면 찾을 수 있고, 직접 구현도 할 수 있다. 마지막 예제를 보자!
@@ -223,7 +224,3 @@ truck에 go 속성이 있는지 검사
 Truck.prototype에 go 속성이 있는지 검사 (= new Car()의 생성자 검사)
 3. new Car()의 prototype인 Car.prototype 검사
 4. Car.prototype.go 발견
-
-
-원론적인 이해
-javascript의 모든 객체는 객체 원형에 대한 숨겨진 연결을 갖는다.
