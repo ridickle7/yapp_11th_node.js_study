@@ -224,3 +224,18 @@ truck에 go 속성이 있는지 검사
 Truck.prototype에 go 속성이 있는지 검사 (= new Car()의 생성자 검사)
 3. new Car()의 prototype인 Car.prototype 검사
 4. Car.prototype.go 발견
+
+
+참고 자료
+1. Javascript 기초 - Object prototype 이해하기 (심화) <br>
+http://insanehong.kr/post/javascript-prototype/
+2. 객체지향 자바스크립트 소개 <br>
+https://developer.mozilla.org/ko/docs/Web/JavaScript/Introduction_to_Object-Oriented_JavaScript
+3. 프로토타입 체인 <br>
+http://meetup.toast.com/posts/104 
+4. 프로토타입의 이해 <br>
+http://unikys.tistory.com/316
+5. 프로토타입의 구성 요소 및 설명 (기초) <br>
+https://medium.com/@bluesh55/javascript-prototype-%EC%9D%B4%ED%95%B4%ED%95%98%EA%B8%B0-f8e67c286b67
+6. javascript 비유 <br>
+http://yubylab.tistory.com/entry/%EC%9E%90%EB%B0%94%EC%8A%A4%ED%81%AC%EB%A6%BD%ED%8A%B8-prototype-%EC%9D%B4%ED%95%B4%ED%95%98%EA%B8%B0
