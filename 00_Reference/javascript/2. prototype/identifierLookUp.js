@@ -14,7 +14,7 @@ var c = {
     attr3: 'c'
 };
 
-c.attr1 // 'a'
+console.log(c.attr1) // 'a'
 
 // 1. c객체 내부에 attr1 속성을 찾는다. -> 없다.
 // 2. c객체에 __proto__ 속성이 존재하는지 확인한다. -> 있다.
