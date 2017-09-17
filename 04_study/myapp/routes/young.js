@@ -51,7 +51,7 @@ router.post('/multiPart', upload.array('asdfg'), function (req, res, next) {
     console.log(req.body); //form fields
     console.log(req.files); //form files
 
-    res.send(req.body);
+    res.send(req.files);
 });
 
 module.exports = router;
